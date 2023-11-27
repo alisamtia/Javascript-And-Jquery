@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Open and Close windows</title>
+  </head>
+  <body>
+    <button type="button" name="button" onclick="win_open()">Open Window</button>
+    <button type="button" name="button" onclick="move_window()">Move Window</button>
+<script>
+  var windows1;
+  function win_open(){
+// use _blank to open it in new tab and _parent to open it in the current tab
+    windows1=window.open("","","width=400px,height=300px,left=100px,top=100px");
+    windows1.document.write("<p>Hey There my name is Ali samtia</p>");
+  }
+  function move_window(){
+    // windows1.moveTo(250,250); //it will change the position from the default setted position
+    windows1.moveBy(250,250); //it will change overall position
+    windows1.focus();
+  }
+</script>
+  </body>
+</html>

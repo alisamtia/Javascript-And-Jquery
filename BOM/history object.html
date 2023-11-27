@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>History object</title>
+  </head>
+  <body>
+    <button type="button" name="button" onclick="back1()">Backward</button>
+    <button type="button" name="button" onclick="forward1()">Forward</button>
+    <button type="button" name="button" onclick="go1()">Go</button>
+<script>
+console.log("History Lenght"+history.length);
+function back1(){
+  history.back();
+}
+function forward1(){
+  history.forward();
+}
+function go1(){
+  history.go(2); // go work for both back and forward and also if you will enter positive value then it will go forward and if you will enter negative value it will go backwrd
+}
+</script>
+  </body>
+</html>

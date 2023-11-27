@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<body>
+<h1>The Element Object</h1>
+<h2>The contains() Method</h2>
+
+<div id="myDIV">
+<p>I am a p element inside "myDIV", and I have a <span id="mySPAN"><b>span</b></span> element inside of me.</p>
+</div>
+
+<p>Does the div element contain a span element?</p>
+<p id="demo"></p>
+
+<script>
+const p_element=document.getElementById("myDIV");
+var child_element=document.getElementById("demo");
+var find=p_element.contains(p_element);
+console.log(find);
+</script>
+
+</body>
+</html>

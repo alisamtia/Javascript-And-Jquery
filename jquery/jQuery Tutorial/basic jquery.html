@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Learn Jquery</title>
+	<style>
+		p{ margin: 0; }
+
+		h2{ margin: 0 0 5px; }
+
+		#test1{
+			display: inline-block;
+			background: pink;
+			width: 150px;
+		    height: 100px;
+		    padding: 10px 10px;
+		    margin: 0 50px 0 0;
+		}
+
+		#test2{
+			display: inline-block;
+			background: orange;
+			width: 150px;
+		    height: 100px;
+		    padding: 10px 10px;
+		}
+	</style>
+  <!-- jquery cdn -->
+  <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+  <script>
+$(document).ready(function(){
+  var a=$('#test1').html();
+  console.log(a);
+});
+$(function(){
+  var a=$('#test2').html();
+  console.log(a);
+})
+  </script>
+</head>
+<body>
+	<h1>Yahoo Baba: jQuery Syntax</h1>
+
+	<div id="test1">
+		<h2>Test Box 1</h2>
+		<p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+	</div>
+
+	<div id="test2">
+		<h2>Test Box 2</h2>
+		<p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+	</div>s
+</body>
+</html>

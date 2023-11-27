@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>JS ClientX and ClientY</title>
+    <style>
+#box{
+  width:300px;
+  height:300px;
+  background-color:orange;
+
+}
+    </style>
+  </head>
+  <body>
+    <div id="box"></div>
+<script>
+  var left=0;
+  var up=0;
+  document.addEventListener("keydown",function(e){
+console.clear();
+var target=document.getElementById("box");
+    var key=e.key;
+    console.log("You Pressed: "+key);
+if(key=="ArrowUp"){
+up=up-4;
+}
+else if (key=="ArrowDown") {
+up=up+4;
+}
+
+
+if(key=="ArrowLeft"){
+left=left-10;
+}
+else if (key=="ArrowRight") {
+left=left+10;
+}
+console.log("Left: "+left);
+console.log("Up: "+up);
+target.style.marginLeft=left+"px";
+target.style.marginTop=up+"px";
+
+  })
+</script>
+  </body>
+</html>

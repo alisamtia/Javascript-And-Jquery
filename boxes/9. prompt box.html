@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Prompt Boxes</title>
+  </head>
+  <body>
+<script>
+  var name=prompt("Enter you Name!");
+  var a=prompt("Enter you percentage!");
+  if(a>=80 & a<=100){
+    document.write(name+"! You are in merit");
+  }
+  else if(a<80 && a>60){
+    document.write("Your are in Ist devision");
+  }
+  else if(a<60 && a>45){
+    document.write("Your are in IInd devision");
+  }
+  else if(a<45 && a>33){
+    document.write("Your are in IIIrd devision");
+  }
+  else if(a<=33 && a>=0) {
+    document.write("You are fail");
+  }
+  else {
+    document.write("Enter a valid value");
+  }
+</script>
+  </body>
+</html>

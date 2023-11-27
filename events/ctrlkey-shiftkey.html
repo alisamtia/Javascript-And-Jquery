@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>JS ClientX and ClientY</title>
+    <style>
+#box{
+  width:300px;
+  height:300px;
+  background-color:orange;
+
+}
+    </style>
+  </head>
+  <body>
+    <div id="box"></div>
+<script>
+  target=document.getElementById("box");
+  target.addEventListener("click",function(e){
+console.clear();
+    var ctrl=e.ctrlKey;
+    if(ctrl==true){
+      console.log("You pressed Ctrl Key");
+    }
+    else {
+      console.log("You did not pressed Ctrl Key");
+    }
+
+
+
+
+    var shift=e.shiftKey;
+    if(shift==true){
+      console.log("You pressed Shift Key");
+    }
+    else {
+      console.log("You did not pressed Shift Key");
+    }
+
+
+    var alt=e.altKey;
+    if(alt==true){
+      console.log("You pressed Alt Key");
+    }
+    else {
+      console.log("You did not pressed Alt Key");
+    }
+
+
+
+        var Win=e.metaKey;
+        if(Win==true){
+          console.log("You pressed Win Key");
+        }
+        else {
+          console.log("You did not pressed Win Key");
+        }
+
+  })
+</script>
+  </body>
+</html>

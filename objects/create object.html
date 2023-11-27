@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Create Object</title>
+  </head>
+  <body>
+<script>
+var a={
+  fname: "ali",
+  lname: "samtia",
+  age: 12,
+  email: 'qadrisahb679@gmail.com',
+  favmovie: ['dhoom','solay','sa'],
+  living:{
+    city:'layyah',
+    country:'pakistan'
+  },
+  salary: function(){
+    return 25000;
+  },
+  fullname: function(){
+    return this.fname+" "+this.lname;
+  }
+};
+
+console.log(a);
+document.write(a.lname); //get 1 element
+document.write(a['lname']); //you can also get it as this element
+document.write(a.fullname()); //use an method
+</script>
+  </body>
+</html>

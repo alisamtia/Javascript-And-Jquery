@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>JS ClientX and ClientY</title>
+  </head>
+  <body>
+
+<script>
+  document.addEventListener("mousemove",function(e){
+    console.clear();
+    var x=e.clientX;
+    var y=e.clientY;
+// return full screen x and y axis
+    var x1=e.screenX;
+    var y1=e.screenY;
+
+    console.log("ClientX Axis: "+x);
+    console.log("ClientY Axis: "+y);
+
+    console.log("screenX Axis: "+x1);
+    console.log("screenY Axis: "+y1);
+
+
+  })
+</script>
+  </body>
+</html>

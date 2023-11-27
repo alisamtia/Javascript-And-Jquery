@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>JS ClientX and ClientY</title>
+    <style>
+#box{
+  width:300px;
+  height:300px;
+  background-color:orange;
+  border: 10px solid #4e4e4e;
+}
+    </style>
+  </head>
+  <body>
+      <!-- <body onoffline="Your function name"> you can also use this-->
+<div id="box">
+</div>
+  </body>
+  <script>
+
+    var target=document.getElementById("box");
+
+    window.addEventListener("online",function(){
+      target.innerHTML="<h2>You are Online</h2>";
+      target.style.backgroundColor="lightgreen";
+      console.log("You are online");
+    });
+
+    window.addEventListener("offline",function(){
+      target.innerHTML="<h2>You are Offline</h2>";
+      target.style.backgroundColor="pink";
+    });
+
+    if(navigator.onLine){
+      console.log("You are online");
+    }
+    else {
+      console.log("You are offline");
+    }
+  </script>
+</html>

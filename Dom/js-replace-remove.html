@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>DOM Navigation</title>
+</head>
+<body>
+    <ul id= "list">
+        <li>orange</li>
+        <li>Apple</li>
+        <li>Grapes</li>
+        <li>Banana</li>
+    </ul>
+    <script>
+var a=document.createElement("li");
+var b=document.createTextNode("Guava");
+a.appendChild(b);
+var target=document.getElementById("list");
+var oldelement=target.children[1];
+target.replaceChild(a,oldelement);
+// target.removeChild(a,oldelement);
+    </script>
+</body>
+</html>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Open and Close windows</title>
+  </head>
+  <body>
+    <button type="button" name="button" onclick="win_open()">Open Window</button>
+    <button type="button" name="button" onclick="win_close()">Close Window</button>
+<script>
+  var windows1;
+  function win_open(){
+// use _blank to open it in new tab and _parent to open it in the current tab
+    windows1=window.open("http://yahoobaba.net/","","width=400px,height=300px,left=100px,top=100px");
+  }
+  function win_close(){
+    windows1.close();
+  }
+</script>
+  </body>
+</html>
